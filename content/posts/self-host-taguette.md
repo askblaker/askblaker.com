@@ -17,8 +17,12 @@ Check it out [here](https://www.taguette.org)
 1. Set an A record for all three subdomains (taguette, mailhog, traefik) pointing to the server ip. Wait a bit for it to propagate.
 2. Install docker + docker compose
 3. Go to your desired folder and create docker-compose.yaml, .env, and ./data/config.py with the content below
-4. Set email, domain, and basic auth in .env
-5. Set cookie secret in config.py (and any other desired settings)
+4. Set email, domain, and basic auth in .env  
+   Note: For user:password pair, you can use this command:  
+   `echo $(htpasswd -nB testuser) | sed -e s/\\$/\\$\\$/g`
+5. Set cookie secret in config.py (and any other desired settings)  
+   To generate a cookie secreet you can use this command:  
+   `openssl rand -base64 48`
 6. Run `docker compose up traefik`
 7. Ensure that traefik.${DOMAIN} works
 8. In a different terminal, run `docker compose run --rm -it taguette` to set password
@@ -112,7 +116,7 @@ BASE_PATH = "/"
 # A unique secret key that will be used to sign cookies
 # set this to something secure and uncomment
 # you can e.g. use the command 'openssl rand -base64 48'
-# SECRET_KEY = "<insert secret key here>"
+SECRET_KEY = "<insert secret key here>"
 
 # Database to use
 # This is a SQLAlchemy connection URL; refer to their documentation for info
