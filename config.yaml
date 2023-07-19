@@ -1,4 +1,4 @@
-baseURL: "https://www.askblaker.com/"
+baseURL: "https://askblaker.com/"
 title: askblaker
 paginate: 5
 theme: PaperMod
