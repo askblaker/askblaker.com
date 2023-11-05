@@ -61,7 +61,7 @@ services:
       - "853:853"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - /finnstats-letsencrypt:/letsencrypt
+      - /traefik-letsencrypt:/letsencrypt
       - /traefik-logs:/logs
     labels:
       - "traefik.enable=true"
