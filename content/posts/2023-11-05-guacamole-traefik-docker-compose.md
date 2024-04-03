@@ -41,7 +41,7 @@ services:
       - --providers.docker=true
       - --providers.docker.exposedbydefault=false
       - --api.dashboard=true
-      - --certificatesresolvers.myresolver.acme.email=${LE_EMAIL}
+      - --certificatesresolvers.myresolver.acme.email=${EMAIL}
       - --certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json
       - --certificatesresolvers.myresolver.acme.tlschallenge=true
       #- --certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory
@@ -126,5 +126,4 @@ services:
       - /root/guac/init:/docker-entrypoint-initdb.d
       - /root/guac/-pgdata:/var/lib/postgresql/data
       - /root/guac/-data/database:/home/postgres/pgdata/data
-
 ```
