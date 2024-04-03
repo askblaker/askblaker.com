@@ -19,6 +19,8 @@ tags:
 [ollama](https://ollama.com/) "Get up and running with large language models. Run Llama 2, Code Llama, and other models. Customize and create your own."  
 [open-webui](https://docs.openwebui.com/) "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted WebUI designed to operate entirely offline. It supports various LLM runners, including Ollama and OpenAI-compatible APIs."  
 [fooocus](https://github.com/lllyasviel/Fooocus) "Fooocus is an image generating software, similar to stable diffusion with focus on ease of use"  
+[labmdalabs](https://lambdalabs.com/) "On-demand & reserved cloud NVIDIA GPUs for AI training & inference. " A host that actually has GPUs available for rapid testing.
+[civitai](https://civitai.com/) "Platform for discovering, creating, and sharing generative art."
 
 
 ## Note
