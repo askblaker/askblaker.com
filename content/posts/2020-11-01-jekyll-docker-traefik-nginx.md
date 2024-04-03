@@ -12,7 +12,7 @@ tags:
 
 ## Prerequisites
 
-1. A [hardened]({{< ref "/posts/hardening-ubuntu.md" >}} "hardened") VPS
+1. A [hardened]({{< ref "/posts/2020-11-01-hardening-ubuntu.md" >}} "hardened") VPS
 2. A domain with dns service. (Forward example.com to your vps ip)
 3. [Jekyll](https://jekyllrb.com/)
 
