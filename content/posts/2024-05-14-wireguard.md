@@ -158,7 +158,7 @@ PING 10.10.10.2 (10.10.10.1) 56(84) bytes of data.
 ```bash
 # From vps
 # (Make sure the hello world service is running on the protected server)
-curl 10.10.0.2:45454
+curl 10.10.0.2:41414
 <Wall of html>
 ```
 
@@ -211,7 +211,7 @@ test.askblaker.com {
 		}
 	}
 
-	reverse_proxy 10.10.10.2:45454
+	reverse_proxy 10.10.10.2:41414
 }
 ```
 
